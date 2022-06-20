@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{>header}}
+  <title>Dynamic WebProject</title>
+</head>
+<body>
+  {{>navbar}}
+     {{!-- Creating main page hero section start --}}
+      <div class="container-fluid-mt-2">
+       <div class="row">
+        <div class="col-md-10 c ol-12 mx-auto"> 
+          <div class="row">
+            <div class="col-md-6 col-12 hero-text order-md-0 order-1 d-flex justify-content-center align-items-start flex-column">
+{{!-- left side --}}
+             <h1>Deepak Mishra</h1>
+             <h1>Happy Birthday To You Bro!</h1>
+             <p>“Wishing you a day filled with happiness and a year filled with joy. Happy birthday!” “Sending you smiles for every moment of your special day…Have a wonderful time and a very happy birthday!” “Hope your special day brings you all that your heart desires!<span class="bold-style">Manish Mishra</span></p>
+             <button class="btn-style btn-primary">Read More</button>
+            </div>
+            <div class="col-md-6 col-12 hero-text order-md-0 order-1">
+{{!-- RIght side --}}
+           <figure>
+            <img src="./images/hero 3.svg" alt="herokaimage">
+           </figure>
+            </div>
+          </div>   
+        </div>
+       </div>
+     </div>
+
+      {{!-- Hero section end  --}}
+
+      {{!-- About us ka page  --}}
+      {{>about}}
+      {{!-- About page end --}}
+
+      {{!-- services us ka page  --}}
+      {{>onearth}}
+      {{!-- services page end --}}
+
+     {{!-- Current Living Location --}}
+     {{>map}}
+     {{!-- Map ends --}}
+     {{!-- Contact us ka page --}}
+
+     {{>contact}}
+     {{!-- Contact page end --}}
+  {{>footer}}
+  {{>scripts}}
+</body>
+</html>
